@@ -2,7 +2,9 @@
 function addUpTo(n) {
     let total = 0;
     for (let i = 1; i <= n; i++) {
+                            //happens more as n grows
         total += i;
+        // depending on the size of n.. that will determine how many assignments there are
     }
     return total;
 }
@@ -17,6 +19,7 @@ console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`)
 //faster
 function addUpTo(n) {
     return n * (n + 1) / 2;
+    //only 3 operations
 }
 
 var time1 = performance.now();
